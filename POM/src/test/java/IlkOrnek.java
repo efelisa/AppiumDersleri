@@ -60,8 +60,10 @@ public class IlkOrnek {
     public void test4() {
         manWomenPages.clickErkekButton();
         kampanyaPages.clickCloseButton();
+
         homePage.clickPopupCloseButton();
         homePage.clickSearchBar();
+
         searchPage.sendKeysSearchBar("Mavi");
         searchPage.clickSearchButtonOnKeyboard();
         String elementText = productsPage.getTextPopup();

@@ -1,13 +1,14 @@
 package pages;
 
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class ProductsPage {
 
-    WebDriver driver;
+    AndroidDriver driver;
 
-    public ProductsPage(WebDriver webDriver) {
+    public ProductsPage(AndroidDriver webDriver) {
         driver = webDriver;
     }
 

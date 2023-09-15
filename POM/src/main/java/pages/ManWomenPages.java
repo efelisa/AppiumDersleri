@@ -1,22 +1,33 @@
 package pages;
 
+import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class ManWomenPages {
 
-    WebDriver driver;
+    AndroidDriver driver;
 
-    public ManWomenPages(WebDriver webDriver) {
+    public ManWomenPages(AndroidDriver webDriver) {
         driver = webDriver;
     }
 
     By carpiButonu = By.id("trendyol.com:id/buttonDismiss");
-    By image = By.xpath("//android.widget.LinearLayout/android.widget.ImageView");
-    By text = By.className("android.widget.TextView");
-    By erkekButonu = By.id("trendyol.com:id/buttonSelectGenderMan");
-    By kadınButonu = By.id("trendyol.com:id/buttonSelectGenderWoman");
+    By image = AppiumBy.xpath("//android.widget.LinearLayout/android.widget.ImageView");
+    By text = AppiumBy.className("android.widget.TextView");
+    By erkekButonu = AppiumBy.id("trendyol.com:id/buttonSelectGenderMan");
+    By kadınButonu = AppiumBy.id("trendyol.com:id/buttonSelectGenderWoman");
+
+    /*
+    By deneme = AppiumBy.androidUIAutomator("");
+    By deneme2 = AppiumBy.iOSClassChain("");
+    By deneme3 = AppiumBy.iOSNsPredicateString("");
+    By deneme4 = AppiumBy.id("");
+    By deneme5 = AppiumBy.xpath("");
+    By deneme6 = AppiumBy.className("");
+     */
 
 
 
