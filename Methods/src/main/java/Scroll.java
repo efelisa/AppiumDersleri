@@ -2,6 +2,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.Sequence;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -11,11 +12,13 @@ import java.util.List;
 public class Scroll {
     AndroidDriver driver;
 
+    @Test
     public void deneme() throws MalformedURLException {
         UiAutomator2Options caps = new UiAutomator2Options();
         caps.setPlatformName("Android");
         caps.setAutomationName("UiAutomator2");
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), caps);
+        scrollDown();
     }
 
 
